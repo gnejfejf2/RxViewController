@@ -8,7 +8,7 @@ let package = Package(
     .macOS(.v10_11), .iOS(.v8), .tvOS(.v9)
   ],
   products: [
-    .library(name: "RxViewController", targets: ["RxViewController"]),
+    .library(name: "RxViewController",type: .static, targets: ["RxViewController"]),
   ],
   dependencies: [
     .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5.0")),
